@@ -1,0 +1,8 @@
+.vscode
+backups
+node_modules
+scss
+package-lock.json
+package.json
+todo.txt
+yourSign.html

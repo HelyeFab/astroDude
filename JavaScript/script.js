@@ -27,7 +27,7 @@ clickedSigns.forEach((el) => {
     let clickedSignName = el.innerText.toLowerCase(); //gives the name of sign the user clicks on
     horoscopeTitle.innerText = clickedSignName.toUpperCase();
     fetch(
-      `https://astrosage-api.herokuapp.com/api/horoscope/${clickedSignName}/daily`
+      `/http://sandipbgt.com/theastrologer/api/horoscope/${clickedSignName}/today`
     )
       .then((response) => response.json())
       .then((data) => (horoscopeContent.innerText = data.horoscope));
